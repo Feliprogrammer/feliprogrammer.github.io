@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello, my name is felipe, i'm a computer programmer from brazil. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This blog was created to spread information about computers and technology in general.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[felipebellocoutinho@gmail.com](mailto:felipebellocoutinho@gmail.com)
