@@ -108,4 +108,21 @@ size. This size, in the context of the C programming language is
 handled by the programmer. So, the programmer needs to especify 
 the size of it in memory. 
 
-   But there's a issue in C programming language, 
+   In C programmming language, when we declare a variable, 
+the operating system goes to the system's memory and reserves
+a space of the size of that variable. But it does not check 
+wheter the variable is actually going to use that fixed space.
+
+   OK, so what is the problem?? The problem is that a programmer
+can try to store a value bigger than the fixed size defined, and
+because it does not check the value being stored it can explode
+the memory lol, i mean, it can store a value that is not supported
+by the memory space, causing what we call a overflow.
+
+   In our case scenario, we declared a local variable called buffer
+with a hundred positions, the operating system then reservers a 
+hundred bytes of memory space for that local variable.
+
+   
+
+ 
