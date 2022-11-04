@@ -6,9 +6,9 @@ it works in theory.
 memory. Inside the computer's memory we have three sections. 
 
 ``` 
-  1 - code -> The code section is where the program instructions are loaded.
-  2 - stack -> The stack section is where the program's local variables are loaded.
-  3 - heap -> The heap is also a region of memory used for dynamic allocation.
+  code -> The code section is where the program instructions are loaded.
+  stack -> The stack section is where the program's local variables are loaded.
+  heap -> The heap is also a region of memory used for dynamic allocation.
 ```
 
   For now, we are going to learn about the stack region using as 
@@ -23,7 +23,6 @@ int main(void) {
      
 return 0;
 }
-
 ```
 
   When we talk about local variables we are talking about variables
@@ -47,7 +46,6 @@ be put above again.
    ---------------------------------------------
    | last_plate | one plate bellow | and so on |
    ---------------------------------------------
-
 ```
 
   Before, the main function gets called, we need to understand 
@@ -60,7 +58,6 @@ this way:
    ---------------------------------------------
    | function2 variables | function1 variables |
    ---------------------------------------------
-
 ```
 
    Also, we need to understand that the last function's local 
@@ -78,7 +75,6 @@ last function knows where it stopped and then continue from there.
    --------------------------------------------------------------
    | function2 variables | return address | function1 variables |
    --------------------------------------------------------------
-
 ```
 
    Let's recap, before a function is called in c programming language,
@@ -91,7 +87,6 @@ pointer. So the stack looks like this.
    --------------------------------------------------------------
    | function2 variables | frame pointer | return address | f1  |
    --------------------------------------------------------------
-
 ```
    So, what's the point of learning about it?? Most of it is done
 in low level context. What about our buffer?? Why talk about it ?? 
@@ -124,7 +119,6 @@ hundred bytes of memory space for that local variable.
    ------------------------------------------------------
    | buffer | frame pointer | return address | function1 |
    ------------------------------------------------------
-
 ```
 
    So, what we need to do to cause a (Stack) Buffer overflow? 
@@ -216,7 +210,6 @@ $ ./server
 $ ./client (for testing purposes)
 $ nc -nlvp 4444
 $ ./exploit 600 400
-
 ```
 
 # Conclusion
