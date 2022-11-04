@@ -172,6 +172,22 @@ to our buffer, that way, instead of executing the remaining instructions
 from function a, the program will jump to address of our buffer, 
 executing watever exists there, in our case, a bunch of A's. 
 
-  
+  It will cause our program to crash, because a bunch of A's
+are not instructions to be executed. So by now i think you 
+are thinking, instead of a bunch of A's we can insert any code
+to be executed?? Exactly...
 
+  BOOM, NOw we are able to execute whatever we want by means of 
+changing to value of the return address and inserting the code
+in the buffer. This code usually used in this scenario is called
+shellcode, it's simply a code that gives a terminal session. 
 
+```
+   Top of stack                            bottom of stack 
+   -------------------------------------------------------
+   | buffer | frame pointer | return address | function1 |
+   -------------------------------------------------------
+    shellcode  baddress  baddress  baddress 
+```
+
+    
