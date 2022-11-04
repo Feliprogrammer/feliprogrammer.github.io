@@ -1,4 +1,5 @@
-{% gist cd16eb3f13c6ab4e4a75d30ec7eedb8d %}
+
+```
 
 section .data
      msg db "Hello World"
@@ -17,3 +18,4 @@ section .text
         mov ebx, 0 
         int 0x80
 
+```
