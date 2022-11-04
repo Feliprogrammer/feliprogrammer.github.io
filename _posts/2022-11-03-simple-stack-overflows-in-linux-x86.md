@@ -123,6 +123,12 @@ by the memory space, causing what we call a overflow.
 with a hundred positions, the operating system then reservers a 
 hundred bytes of memory space for that local variable.
 
-   
+```
+   Top of stack                            bottom of stack 
+   ------------------------------------------------------
+   | buffer | frame pointer | return address | function1 |
+   ------------------------------------------------------
 
- 
+```
+
+   
