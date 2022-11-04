@@ -1,4 +1,5 @@
-```nasm
+{% highlight assembly %}
+
 section .data
      msg db "Hello World"
      len equ $-msg
@@ -15,5 +16,4 @@ section .text
         mov eax, 1
         mov ebx, 0 
         int 0x80
-
-```
+{% endhighlight %}
