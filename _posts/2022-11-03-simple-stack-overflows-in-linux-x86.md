@@ -218,11 +218,12 @@ $ gcc client.c -o client
 $ gcc exploit.c -o exploit
 $ ./server
 $ ./client (for testing purposes)
+$ nc -nlvp 4444
 $ ./exploit 600 400
 
 ```
 
 # Conclusion
 
-  It's possible modify the flow of execution of a computer program
-by changing its return address
+  It's possible modify the flow of execution of a computer program when
+it has a buffer overflow vulnerability.
