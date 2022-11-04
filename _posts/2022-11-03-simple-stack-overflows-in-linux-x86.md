@@ -6,14 +6,10 @@ it works in theory.
 memory. Inside the computer's memory we have three sections. 
 
 ``` 
-  1 - code
-  2 - stack
-  3 - heap
+  1 - code -> The code section is where the program instructions are loaded.
+  2 - stack -> The stack section is where the program's local variables are loaded.
+  3 - heap -> The heap is also a region of memory used for dynamic allocation.
 ```
-
-  The code section is where the program instructions are loaded. 
-  The stack section is where the program's local variables are loaded.
-  The heap is also a region of memory used for dynamic allocation. 
 
   For now, we are going to learn about the stack region using as 
 example a simple program written in C programming language.
