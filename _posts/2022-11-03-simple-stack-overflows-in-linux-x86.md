@@ -131,4 +131,47 @@ hundred bytes of memory space for that local variable.
 
 ```
 
-   
+   So, what we need to do to cause a (Stack) Buffer overflow? 
+   and, what can i do with it? 
+
+   Answer1: We simply need to fill the buffer with a value
+bigger than it supports.
+   Answer2: This question will be answered soon. 
+
+
+   So, if we fill our buffer with A's it will overwrite
+watever comes below it, because the stack grows towards
+lower memory addresses. 
+
+```
+   Top of stack                            bottom of stack 
+   ------------------------------------------------------
+   | buffer | frame pointer | return address | function1 |
+   ------------------------------------------------------
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+```
+
+   Ok, now we can overwrite the frame pointer, and return address,
+what can we do with it?
+
+   Answer: To understand it, we first need to understand the 
+return address again. When the program calls let's say, function
+a calls function b, the function a stores the address of its
+next instruction in the stack, so that when the function b
+returns, the function a retrieves this value from the stack, 
+and continue to execute its instructions. BLABLABLA........
+
+  So what the program does with the return address in hand? 
+  It simply jumps to the location pointed by it. 
+
+  Now, we are going to answer the question, what can we
+do with it? 
+
+  Answer: We can overwrite the return address making it point 
+to our buffer, that way, instead of executing the remaining instructions
+from function a, the program will jump to address of our buffer, 
+executing watever exists there, in our case, a bunch of A's. 
+
+  
+
+
