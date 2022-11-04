@@ -41,3 +41,42 @@ inside a function in C language called main, we can call it a local
 variable, which means that it will be stored in the memory location
 called stack. 
 
+  Now, let's talk about the stack. we can compare the stack region
+as a pile of plates that are cleaned after a meal lol. The last plate
+is put above all other plates and if we had another plate, it would
+be put above again.
+
+```
+   Top of stack                 bottom of stack 
+   ---------------------------------------------
+   | last_plate | one plate bellow | and so on |
+   ---------------------------------------------
+
+```
+
+  Before, the main function gets called, we need to understand 
+that the stack is already filled with a bunch of local variables
+from other functions of the program. So it will be represented
+this way: 
+
+```
+   Top of stack                 bottom of stack 
+   ---------------------------------------------
+   | function2 variables | function1 variables |
+   ---------------------------------------------
+
+```
+
+   Also, we need to understand that the last function's local 
+variables will be placed in the top of our stack. 
+
+   Usually before the program jumps from a function to another 
+function, it stores a value on stack called return address. This 
+address is stored so that the program's function before the 
+last function knows where it stopped and then continue from there.
+
+```
+   
+
+```
+
