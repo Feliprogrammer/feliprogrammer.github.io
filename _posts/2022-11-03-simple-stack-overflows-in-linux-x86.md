@@ -75,8 +75,37 @@ function, it stores a value on stack called return address. This
 address is stored so that the program's function before the 
 last function knows where it stopped and then continue from there.
 
+   So, the stack looks like this... 
+
 ```
-   
+   Top of stack                                  bottom of stack 
+   --------------------------------------------------------------
+   | function2 variables | return address | function1 variables |
+   --------------------------------------------------------------
 
 ```
 
+   Let's recap, before a function is called in c programming language,
+the return address is stored in stack, then when we enter inside the
+function scope, the program saves a value into the stack called frame
+pointer. So the stack looks like this. 
+
+```
+   Top of stack                                  bottom of stack 
+   --------------------------------------------------------------
+   | function2 variables | frame pointer | return address | f1  |
+   --------------------------------------------------------------
+
+```
+   So, what's the point of learning about it?? Most of it is done
+in low level context. What about our buffer?? Why talk about it ?? 
+
+   Now, things starts to get interesting, our buffer variable
+is actually our (function2 variables, image above).
+
+   Every variable has its place in memory determined by a fixed
+size. This size, in the context of the C programming language is 
+handled by the programmer. So, the programmer needs to especify 
+the size of it in memory. 
+
+   But there's a issue in C programming language, 
