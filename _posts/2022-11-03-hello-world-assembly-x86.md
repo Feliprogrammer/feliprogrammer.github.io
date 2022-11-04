@@ -1,5 +1,5 @@
 
-```
+```nasm
 
 section .data
      msg db "Hello World"
