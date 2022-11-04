@@ -177,7 +177,7 @@ are not instructions to be executed. So by now i think you
 are thinking, instead of a bunch of A's we can insert any code
 to be executed?? Exactly...
 
-  BOOM, NOw we are able to execute whatever we want by means of 
+  BOOM, Now we are able to execute whatever we want by means of 
 changing to value of the return address and inserting the code
 in the buffer. This code usually used in this scenario is called
 shellcode, it's simply a code that gives a terminal session. 
@@ -190,4 +190,39 @@ shellcode, it's simply a code that gives a terminal session.
     shellcode  baddress  baddress  baddress 
 ```
 
-    
+   Now, let's go to practice. In order to make it work we need
+to set a vulnerable server. 
+
+{% gist 08bd1de6ec2d1d24f9535da67af61562 %}
+
+   Now we have a client to that server too. 
+
+{% gist 4e6620ebbb5b59aca6153c578a36a0d5 %}
+
+   And Then we have the exploit code... 
+
+{% gist 9860179a510a997177f44ffd5e99d9f0 %}
+
+
+   Most operation systems created solutions
+for this type of problem, so we need to disable some protections
+first.
+
+# Steps for execution
+
+```
+$ echo 0 | sudo tee /proc/sys/kernel/randomize_va_space (Disable ASLR)
+$ gcc -z execstack -fno-stack-protector -mpreferred-stack-boundary=2 
+-g server.c -o server
+$ gcc client.c -o client
+$ gcc exploit.c -o exploit
+$ ./server
+$ ./client (for testing purposes)
+$ ./exploit 600 400
+
+```
+
+# Conclusion
+
+  It's possible modify the flow of execution of a computer program
+by changing its return address
