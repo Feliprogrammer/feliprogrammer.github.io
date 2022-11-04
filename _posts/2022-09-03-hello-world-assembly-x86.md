@@ -1,4 +1,4 @@
-```python
+```
 section .data
      msg db "Hello World"
      len equ $-msg
