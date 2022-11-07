@@ -1,4 +1,4 @@
-  Hello everyone, in this resume i'm going to explain some basic things
+=  Hello everyone, in this resume i'm going to explain some basic things
 about stack based buffer overflows. First, we need to to understand how 
 it works in theory.
 
@@ -180,39 +180,10 @@ shellcode, it's simply a code that gives a terminal session.
     shellcode  baddress  baddress  baddress 
 ```
 
-   Now, let's go to practice. In order to make it work we need
-to set a vulnerable server. 
+  Now, i would like to show you a video showcasing all that
+was explained until here: 
 
-{% gist 08bd1de6ec2d1d24f9535da67af61562 %}
+<video>
 
-   Now we have a client to that server too. 
+</video>
 
-{% gist 4e6620ebbb5b59aca6153c578a36a0d5 %}
-
-   And Then we have the exploit code... 
-
-{% gist 9860179a510a997177f44ffd5e99d9f0 %}
-
-
-   Most operation systems created solutions
-for this type of problem, so we need to disable some protections
-first.
-
-# Steps for execution
-
-```
-$ echo 0 | sudo tee /proc/sys/kernel/randomize_va_space (Disable ASLR)
-$ gcc -z execstack -fno-stack-protector -mpreferred-stack-boundary=2 
--g server.c -o server
-$ gcc client.c -o client
-$ gcc exploit.c -o exploit
-$ ./server
-$ ./client (for testing purposes)
-$ nc -nlvp 4444
-$ ./exploit 600 400
-```
-
-# Conclusion
-
-  It's possible modify the flow of execution of a computer program when
-it has a buffer overflow vulnerability.
