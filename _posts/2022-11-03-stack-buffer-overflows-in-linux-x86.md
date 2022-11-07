@@ -185,9 +185,19 @@ was explained until here:
 
 <iframe width="670" height="400" src="https://www.youtube.com/embed/BXSbdstsIPg" frameborder="0" allowfullscreen></iframe>
 
-# Code & Links
+# Code
 
-<script width=400 hight=400 src="https://gist.github.com/Feliprogrammer/4e6620ebbb5b59aca6153c578a36a0d5.js"></script>
-<script width=400 hight=400 src="https://gist.github.com/Feliprogrammer/08bd1de6ec2d1d24f9535da67af61562.js"></script>
-<script width=400 hight=400 src="https://gist.github.com/Feliprogrammer/9860179a510a997177f44ffd5e99d9f0.js"></script>
+```
+ Client: https://gist.github.com/Feliprogrammer/4e6620ebbb5b59aca6153c578a36a0d5
+ Server: https://gist.github.com/Feliprogrammer/08bd1de6ec2d1d24f9535da67af61562
+ Exploit: https://gist.github.com/Feliprogrammer/9860179a510a997177f44ffd5e99d9f0 
 
+```
+
+# Links
+
+```
+https://en.wikipedia.org/wiki/Buffer_overflow
+https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf
+
+```
