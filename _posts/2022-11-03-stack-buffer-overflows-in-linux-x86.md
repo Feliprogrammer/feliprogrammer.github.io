@@ -183,6 +183,6 @@ shellcode, it's simply a code that gives a terminal session.
   Now, i would like to show you a video showcasing all that
 was explained until here: 
 
-<video width="500" height="500" controls="controls">
+<video width="300" height="300" controls="controls">
   <source src="../videos/video1.mp4" type="video/mp4">
 </video>
