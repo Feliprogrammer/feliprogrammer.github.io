@@ -1,4 +1,4 @@
-=  Hello everyone, in this resume i'm going to explain some basic things
+  Hello everyone, in this resume i'm going to explain some basic things
 about stack based buffer overflows. First, we need to to understand how 
 it works in theory.
 
@@ -183,6 +183,6 @@ shellcode, it's simply a code that gives a terminal session.
   Now, i would like to show you a video showcasing all that
 was explained until here: 
 
-<video width="200" height="200" controls="controls">
+<video width="200" height="400" controls="controls">
   <source src="../videos/video1.mp4" type="video/mp4">
 </video>
