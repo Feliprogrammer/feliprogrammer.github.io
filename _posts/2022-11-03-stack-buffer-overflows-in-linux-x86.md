@@ -185,9 +185,9 @@ was explained until here:
 
 <iframe width="670" height="400" src="https://www.youtube.com/embed/BXSbdstsIPg" frameborder="0" allowfullscreen></iframe>
 
-# Code
+# Code & Links
 
-<script src="https://gist.github.com/Feliprogrammer/4e6620ebbb5b59aca6153c578a36a0d5.js"></script>
-<script src="https://gist.github.com/Feliprogrammer/08bd1de6ec2d1d24f9535da67af61562.js"></script>
-<script src="https://gist.github.com/Feliprogrammer/9860179a510a997177f44ffd5e99d9f0.js"></script>
+<script width=400 hight=400 src="https://gist.github.com/Feliprogrammer/4e6620ebbb5b59aca6153c578a36a0d5.js"></script>
+<script width=400 hight=400 src="https://gist.github.com/Feliprogrammer/08bd1de6ec2d1d24f9535da67af61562.js"></script>
+<script width=400 hight=400 src="https://gist.github.com/Feliprogrammer/9860179a510a997177f44ffd5e99d9f0.js"></script>
 
