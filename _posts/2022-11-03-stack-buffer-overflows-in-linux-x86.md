@@ -184,3 +184,9 @@ shellcode, it's simply a code that gives a terminal session.
 was explained until here: 
 
 <iframe width="670" height="400" src="https://www.youtube.com/embed/BXSbdstsIPg" frameborder="0" allowfullscreen></iframe>
+
+# Links
+
+https://gist.githubusercontent.com/Feliprogrammer/08bd1de6ec2d1d24f9535da67af61562/raw/8dfa2c4cfe8bd2bee11ea3f60a633039c01ce7ab/server.c
+https://gist.githubusercontent.com/Feliprogrammer/9860179a510a997177f44ffd5e99d9f0/raw/0b5b1366bb63ba5274246c99c5e09be6bbf4fbae/exploit.c
+
