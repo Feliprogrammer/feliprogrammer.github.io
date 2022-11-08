@@ -14,16 +14,16 @@ memory. Inside the computer's memory we have three sections.
   For now, we are going to learn about the stack region using as 
 example a simple program written in C programming language.
 
-{% highlight C linenos %}
+{% highlight C %}
 
 #include <stdio.h>
 
 int main(void) {
 
-     char buffer[100];
+   char buffer[100];
      
 return 0;
-}
+ }
 {% endhighlight %}
 
   When we talk about local variables we are talking about variables
@@ -193,18 +193,13 @@ was explained until here:
         
 # Code
 
-```
- Client: https://gist.github.com/Feliprogrammer/4e6620ebbb5b59aca6153c578a36a0d5
- Server: https://gist.github.com/Feliprogrammer/08bd1de6ec2d1d24f9535da67af61562
- Exploit: https://gist.github.com/Feliprogrammer/9860179a510a997177f44ffd5e99d9f0 
-
-```
+[External Title](https://gist.github.com/Feliprogrammer/4e6620ebbb5b59aca6153c578a36a0d5)
+[External Title](https://gist.github.com/Feliprogrammer/08bd1de6ec2d1d24f9535da67af61562)
+[External Title](https://gist.github.com/Feliprogrammer/9860179a510a997177f44ffd5e99d9)
 
 # References
 
-```
-https://en.wikipedia.org/wiki/Buffer_overflow
-https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf
-
-```
 [External Title](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf)
+[External Title](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf)
+
+
