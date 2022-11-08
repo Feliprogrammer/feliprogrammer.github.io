@@ -193,13 +193,16 @@ was explained until here:
         
 # Code
 
-[client.c](https://gist.github.com/Feliprogrammer/4e6620ebbb5b59aca6153c578a36a0d5)
+[client.c](https://gist.github.com/Feliprogrammer/4e6620ebbb5b59aca6153c578a36a0d5) 
+<br>
 [server.c](https://gist.github.com/Feliprogrammer/08bd1de6ec2d1d24f9535da67af61562)
+<br>
 [exploit.c](https://gist.github.com/Feliprogrammer/9860179a510a997177f44ffd5e99d9)
 
 # References
 
-[https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashi](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf)
+[https://en.wikipedia.org/wiki/Buffer_overflow](https://en.wikipedia.org/wiki/Buffer_overflow)
+<br>
 [https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashi](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf)
 
 
