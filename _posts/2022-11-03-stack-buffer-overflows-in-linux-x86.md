@@ -14,7 +14,7 @@ memory. Inside the computer's memory we have three sections.
   For now, we are going to learn about the stack region using as 
 example a simple program written in C programming language.
 
-{% highlight c %}
+{% highlight C %}
 
 #include <stdio.h>
 
