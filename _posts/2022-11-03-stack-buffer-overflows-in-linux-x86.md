@@ -14,7 +14,8 @@ memory. Inside the computer's memory we have three sections.
   For now, we are going to learn about the stack region using as 
 example a simple program written in C programming language.
 
-```
+{% highlight c %}
+
 #include <stdio.h>
 
 int main(void) {
@@ -23,7 +24,7 @@ int main(void) {
      
 return 0;
 }
-```
+{% endhighlight %}
 
   When we talk about local variables we are talking about variables
 declared inside a function scope. In this example, we can see that 
