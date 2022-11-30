@@ -181,16 +181,6 @@ shellcode, it's simply a code that gives a terminal session.
     shellcode  baddress  baddress  baddress 
 ```
 
-  Now, i would like to show you a video showcasing all that
-was explained until here: 
-
-<iframe width="560"
-        height="315"
-        src="https://www.youtube.com/embed/BXSbdstsIPg"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
-        
 # References
 
 [https://en.wikipedia.org/wiki/Buffer_overflow](https://en.wikipedia.org/wiki/Buffer_overflow)
